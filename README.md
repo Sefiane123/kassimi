@@ -1,16 +1,20 @@
 
 
+ 
+
 ## 👤 Auteur
 
 - **Mr Sefiane EL-KASSIMI**  
-  Master MMSD – Année universitaire 2024–2025
+  Master MMSD – Année universitaire 2024–2025  
+  Université : **Université Abdelmalek Essaâdi – FST Tanger**
+
+
 
 ---
 
 ## 🧑‍🏫 Encadrement
-
-- **Mr AZMANI Abdellah** – Encadrant pédagogique  
-- **Mme LECHHAB OUADRASSI Nihad** – Responsable du module
+ 
+- **Mme LECHHAB OUADRASSI Nihad** 
 
 ---
 
