@@ -2,15 +2,15 @@
 
 ## 👤 Auteur
 
-- **Sefiane El-kassimi**  
+- **Mr Sefiane EL-KASSIMI**  
   Master MMSD – Année universitaire 2024–2025
 
 ---
 
 ## 🧑‍🏫 Encadrement
 
-- **Encadrant pédagogique :** Mr **AZMANI Abdellah**  
-- **Responsable du module :** Mme **LECHHAB OUADRASSI Nihad**
+- **Mr AZMANI Abdellah** – Encadrant pédagogique  
+- **Mme LECHHAB OUADRASSI Nihad** – Responsable du module
 
 ---
 
@@ -18,6 +18,7 @@
 
 Ce projet est une **preuve de concept académique**, réalisé dans un but **pédagogique**.  
 ⚠️ **Il ne doit pas être utilisé en production sans mesures de sécurité supplémentaires.**
+
 
  
  # 📌 Projet : Mise en œuvre d’une Infrastructure à Clés Publiques (PKI) à Trois Niveaux
