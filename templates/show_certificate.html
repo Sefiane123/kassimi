@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تفاصيل الشهادة</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f7f7f7;
+            padding: 30px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .label {
+            font-weight: bold;
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>📜 تفاصيل الشهادة الموقعة</h1>
+        <p><span class="label">الموضوع:</span> {{ cert_info.subject }}</p>
+        <p><span class="label">الجهة الموقعة:</span> {{ cert_info.issuer }}</p>
+        <p><span class="label">الرقم التسلسلي:</span> {{ cert_info.serial_number }}</p>
+        <p><span class="label">صالحة من:</span> {{ cert_info.not_valid_before }}</p>
+        <p><span class="label">صالحة إلى:</span> {{ cert_info.not_valid_after }}</p>
+        <p><span class="label">🔐 المفتاح العمومي:</span></p>
+        <pre>{{ cert_info.public_key }}</pre>
+        <br>
+        <a href="/">🔙 الرجوع للصفحة الرئيسية</a>
+    </div>
+</body>
+</html>
+

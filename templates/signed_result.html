@@ -1,0 +1,30 @@
+ {% extends "base.html" %}
+{% block title %}✅ شهادة موقعة{% endblock %}
+
+{% block content %}
+<h2>✅ تم توقيع الشهادة بنجاح</h2>
+
+<h3>🔐 الشهادة الموقعة:</h3>
+<pre style="background-color: #f4f4f4; padding: 15px; border: 1px solid #ccc;">
+{{ certificate }}
+</pre>
+
+<h3>📑 طلب توقيع الشهادة (CSR):</h3>
+{% if uploaded_csr %}
+<pre style="background-color: #f0f0f0; padding: 15px; border: 1px dashed #aaa;">
+{{ uploaded_csr }}
+</pre>
+{% else %}
+<p>⚠️ لا يوجد محتوى CSR للعرض.</p>
+{% endif %}
+
+<br>
+
+<h3>📥 خيارات التحميل:</h3>
+<ul>
+    <li><a href="{{ url_for('download_signed_cert') }}">📄 تحميل الشهادة الموقعة</a></li>
+    <li><a href="{{ url_for('download_uploaded_csr') }}">📑 تحميل طلب توقيع الشهادة (CSR)</a></li>
+    <li><a href="{{ url_for('show_certificate', cert_id=cert_id) }}">👁 عرض تفاصيل الشهادة</a></li>
+    <li><a href="{{ url_for('generate_csr') }}">🏠 العودة للواجهة الرئيسية</a></li>
+</ul>
+{% endblock %}

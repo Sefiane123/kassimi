@@ -1,0 +1,17 @@
+ {% extends "base.html" %}
+
+{% block title %}رفع شهادة جديدة{% endblock %}
+
+{% block content %}
+<h2>📤 رفع شهادة جديدة</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    <label for="cert_file">اختر ملف الشهادة (.pem):</label><br><br>
+    <input type="file" name="cert_file" id="cert_file" accept=".pem" required><br><br>
+
+    <button type="submit">⬆ رفع الشهادة</button>
+</form>
+
+<p>💡 تأكد أن الملف بصيغة PEM ويحتوي على شهادة صحيحة.</p>
+
+{% endblock %}

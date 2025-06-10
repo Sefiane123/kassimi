@@ -1,0 +1,41 @@
+ [ ca ]
+default_ca = CA_default
+
+[ CA_default ]
+dir               = C:/Users/Lenovo/Downloads/TPP3/root-ca
+certs             = C:/Users/Lenovo/Downloads/TPP3/root-ca/certs
+crl_dir           = C:/Users/Lenovo/Downloads/TPP3/root-ca/crl
+new_certs_dir     = C:/Users/Lenovo/Downloads/TPP3/root-ca/newcerts
+database          = C:/Users/Lenovo/Downloads/TPP3/root-ca/index.txt
+serial            = C:/Users/Lenovo/Downloads/TPP3/root-ca/serial
+RANDFILE          = C:/Users/Lenovo/Downloads/TPP3/root-ca/private/.rand
+
+private_key       = C:/Users/Lenovo/Downloads/TPP3/root-ca/private/root.key.pem
+certificate       = C:/Users/Lenovo/Downloads/TPP3/root-ca/certs/root.cert.pem
+
+crlnumber         = C:/Users/Lenovo/Downloads/TPP3/root-ca/crlnumber
+crl               = C:/Users/Lenovo/Downloads/TPP3/root-ca/crl/root.crl.pem
+crl_extensions    = crl_ext
+default_crl_days  = 30
+
+default_md        = sha256
+
+policy            = policy_loose
+
+[ policy_loose ]
+countryName             = optional
+stateOrProvinceName     = optional
+organizationName        = optional
+organizationalUnitName  = optional
+commonName              = supplied
+emailAddress            = optional
+
+[ crl_ext ]
+authorityKeyIdentifier=keyid:always
+[ v3_intermediate_ca ]
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always,issuer
+basicConstraints = critical, CA:true, pathlen:0
+keyUsage = critical, digitalSignature, cRLSign, keyCertSign
+
+
